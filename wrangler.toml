@@ -1,0 +1,11 @@
+compatibility_flags = [ "nodejs_compat" ]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "lastminutepitch_preview"
+database_id = "31c9ea37-6853-4009-a0dd-5ce67b215a14"
+preview_database_id = "DB"
+
+[[r2_buckets]]
+binding = 'STORAGE'
+bucket_name = 'lastminutepitch-preview'

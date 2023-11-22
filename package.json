@@ -12,6 +12,7 @@
     "pages:deploy": "npm run build && wrangler pages deploy ./dist"
   },
   "dependencies": {
+    "openai": "^4.19.1",
     "vue": "^3.3.4",
     "vue-router": "^4.2.5"
   },
