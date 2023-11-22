@@ -9,3 +9,4 @@ preview_database_id = "DB"
 [[r2_buckets]]
 binding = 'STORAGE'
 bucket_name = 'lastminutepitch-preview'
+preview_bucket_name = "STORAGE"

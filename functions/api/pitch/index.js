@@ -94,7 +94,6 @@ async function generateDallEImage(apiKey, prompt) {
     n: 1,
     response_format: "b64_json",
     model: "dall-e-2",
-    // quality: "hd",
     size: "1024x1024"
   }
   // let request = {
