@@ -23,9 +23,12 @@ export async function onRequestPut(context) {
     console.log("\tGenerating image from prompt " + slide.imagePrompt)
     let promise = generateDallEImage(openaiAPIKey, slide.imagePrompt)
       .then((image) => {
-        let image_name =
-          context.env.STORAGE.put(slide.imageLocation, image);
+        return context.env.STORAGE.put(slide.imageLocation, image);
       })
+      .then(() => {
+        console.log("Done uploading image")
+      })
+
     dallEPromises.push(promise)
   }
   await Promise.all(dallEPromises)
