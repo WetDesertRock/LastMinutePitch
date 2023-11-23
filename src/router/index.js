@@ -1,13 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import GeneratePitchView from '../views/GeneratePitchView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: HomeView
+      name: 'generatepitch',
+      component: GeneratePitchView
     },
     {
       path: '/about',
@@ -16,7 +16,7 @@ const router = createRouter({
     },
     {
       path: '/slides/:id',
-      name: 'SlidesView',
+      name: 'slides',
       component: () => import('../views/SlidesView.vue')
     }
   ]
